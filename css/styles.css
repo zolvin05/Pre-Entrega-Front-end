@@ -424,6 +424,10 @@ footer {
     width: 90%;
     max-width: none;
   }
+  .tarjeta--producto {
+    width: 90%;
+    max-width: none;
+  }
 
   .footer {
     flex-direction: column;
