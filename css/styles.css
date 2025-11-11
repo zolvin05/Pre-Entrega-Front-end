@@ -72,6 +72,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
+  
   align-items: center;
   margin: 0.5rem;
   padding: 2rem;
@@ -136,51 +137,145 @@ main {
 }
 
 /* ----- TARJETAS ----- */
-.contenedor--tarjetas {
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  width: 90%;
+  padding: 2rem;
+}
+
+/* --- Cada tarjeta individual --- */
+.tarjeta--producto {
   background-color: black;
   color: yellow;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  flex: 1 1 25rem; 
-  max-width: 30rem;
+  align-items: center;
+  width: 28rem;
+  padding: 1.5rem;
   border-radius: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.contenedor--tarjetas h3 {
-  font-size: 3rem;
-  text-align: center;
+.tarjeta--producto:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta--producto img {
+  width: 80%;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.tarjeta--producto h3 {
+  font-size: 2.5rem;
   margin: 1rem 0;
 }
 
-.contenedor--tarjetas p {
-  font-size: 2.5rem;
+.tarjeta--producto p {
+  font-size: 2rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
-.contenedor--tarjetas img {
-  width: 85%;
-  align-self: center;
-  height: auto;
-  border-radius: 1rem;
-  object-fit: cover;
-  margin-top: 1rem;
-}
-
-.carrito-icono {
+.tarjeta--producto .btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  align-self: center;
+  color: yellow;
+  font-size: 1.8rem;
+  
 }
 
-.carrito-icono img {
-  width: 4rem;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.tarjeta--producto .btn i {
+  margin-right: 0.5rem;
+  color: yellow;
+  font-size: 1.8rem;
+}
+.tarjeta--producto .btn:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.tarjeta--producto .btn:hover i {
+  color: white;
+  transform: scale(1.1);
+}
+
+
+/* --- Carrito --- */
+
+.main-carrito h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 0.2rem solid black;
+  font-size: 3rem;
+
+}
+
+#contenedor-carrito {
+  display: flex;
+  flex-direction: row;
+  border: 1rem inset black;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  width: 90%;
+  padding: 2rem;
+
+}
+.tarjeta--producto .btn-eliminar-carrito:hover {
+  
+  color: white;
+  transform: scale(1.1);
+}
+
+.acciones-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.resumen-carrito p {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2rem;
+  color: yellow;
+}
+
+.resumen-carrito {
+  background-color: black;
+  color: yellow;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  border: 0.3rem solid black;
+}
+
+
+.btn-vaciar-carrito {
+  background-color: yellow;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 0.3rem solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-vaciar-carrito:hover {
+  background-color: black;
+  color: yellow;
+  transform: scale(1.05);
 }
 
 /* ----- RESEÑAS ----- */

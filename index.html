@@ -6,6 +6,7 @@
     <title>Morgana's Shop - Tienda de Juegos Online</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"> 
 </head> 
 <body> 
@@ -15,7 +16,10 @@
         <ul>
             <li><a href="./index.html"> Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
-            <li><a href="./pages/contacto.html"> Contacto </a></li>     
+            <li><a href="./pages/contacto.html"> Contacto </a></li> 
+            <li><a href="./pages/carrito.html" class="carrito-icono">
+              🛒 <span id="contador-carrito">0</span>
+            </a></li>    
         </ul>
         </nav> 
      </header> 
@@ -35,54 +39,9 @@
     
     <main class="main">
       <section id="productos" class="productos-destacados">
-        <h2> Productos destacados! </h2>
-        <div class="contenedor-productos">
-         <article class="contenedor--tarjetas">
-           <img src="./imagenes/capture.png" alt="Portada de juego Hollow knight: Silksong" />
-           <h3>Hollow knight: Silksong</h3>
-           <p>Precio: $7</p>
-           <button class="carrito-icono">
-            <img src="./imagenes/carrito-de-compras.png" title="Agregar al carrito" alt="Agregar al carrito"/>
-           </button>            
-         </article>         
-                     
-         </article>
-
-         <article class="contenedor--tarjetas">          
-           <img src="./imagenes/capture2.png" alt="Portada de juego Borderlands 4" />            
-            <h3>Borderlands 4</h3>            
-            <p>Precio: $60</p>           
-             <button class="carrito-icono"><img src="./imagenes/carrito-de-compras.png" title="Agregar al carrito" alt="Agregar al carrito"/>
-             </button>              
-         </article>
-    
-         <article class="contenedor--tarjetas">          
-          <img src="./imagenes/capture4.png" alt="Portada de juego Black Myth Wukong" />            
-            <h3>Black Myth Wukong</h3>
-            <p>Precio: $60</p>            
-             <button class="carrito-icono">
-              <img src="./imagenes/carrito-de-compras.png" title="Agregar al carrito" alt="Agregar al carrito"/>
-             </button>            
-         </article>
-
-         <article class="contenedor--tarjetas"> 
-            <img src="./imagenes/capture5.png" alt="Portada de juego Persona 3 RELOAD" />
-            <h3>Persona 3 RELOAD</h3>
-            <p>Precio: $40</p>
-            <button class="carrito-icono">
-            <img src="./imagenes/carrito-de-compras.png" title="Agregar al carrito" alt="Agregar al carrito"/> 
-            </button>
-         </article>
-
-         <article class="contenedor--tarjetas"> 
-            <img src="./imagenes/capture6.png" alt="Portada de juego Elden Ring" />
-            <h3>Elden Ring</h3>
-            <p>Precio: $40</p>
-            <button class="carrito-icono"> 
-             <img src="./imagenes/carrito-de-compras.png" title="Agregar al carrito" alt="Agregar al carrito"/>
-            </button>
-         </article>
-        </div>
+         <h2> Productos destacados! </h2>
+        <div id="contenedor-tarjetas" class="contenedor-productos">
+        </div>         
       </section>
 
       <section class="reseñas"> 
@@ -125,5 +84,6 @@
             </ul>
         </nav>
     </footer> 
+    <script type="module" src="./js/index.js"></script>
 </body> 
 </html>

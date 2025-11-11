@@ -1,0 +1,7 @@
+[
+  { "id": "1", "nombre": "Hollow knight: Silksong", "img": "imagenes/capture.png", "precio": 7 },
+  { "id": "2", "nombre": "Borderlands 4", "img": "imagenes/capture2.png", "precio": 60 },
+  { "id": "3", "nombre": "Black Myth Wukong", "img": "imagenes/capture4.png", "precio": 60 },
+  { "id": "4", "nombre": "Persona 3 RELOAD", "img": "imagenes/capture5.png", "precio": 40 },
+  { "id": "5", "nombre": "Elden Ring", "img": "imagenes/capture6.png", "precio": 40 }
+]
