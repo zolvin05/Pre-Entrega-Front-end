@@ -465,6 +465,10 @@ footer {
     grid-template-columns: 1fr; 
     padding: 1rem;
   }
+  .tarjeta--producto {
+    grid-template-columns: 1fr; 
+    padding: 1rem;
+  }
 
   .reseñas-tarjeta {
     padding: 0.5rem;
